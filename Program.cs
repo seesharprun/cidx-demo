@@ -1,4 +1,5 @@
 ﻿using System;
+using Humanizer;
 
 namespace ConsoleApp
 {
@@ -6,7 +7,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string timeTill2019 = new DateTime(2019, 01, 01).Humanize();
+            Console.WriteLine(timeTill2019);
         }
     }
 }
